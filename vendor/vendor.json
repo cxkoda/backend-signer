@@ -1,6 +1,0 @@
-{
-	"heroku": {
-		"goVersion": "go1.17"
-	},
-	"rootPath": "github.com/cxkoda/backend-signer"
-}

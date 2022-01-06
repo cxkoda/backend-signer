@@ -1,8 +1,11 @@
-run: main
+local: build
 	@PATH="$(PWD)/bin:$(PATH)" heroku local
 
-main: main.go
+build: main.go
 	go build -o bin/backend-signer main.go
+
+run: main.go
+	go run main.go
 
 clean:
 	rm -rf bin
